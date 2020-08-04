@@ -1,0 +1,11 @@
+<mat-card>
+  <mat-card-content>
+    <mat-selection-list #shoes [multiple]="false">
+      <mat-list-option *ngFor="let quiz of quizzes" [value]="quiz" (click)="selectQuiz(quiz)">
+        {{quiz.title}}
+      </mat-list-option>
+    </mat-selection-list>
+  </mat-card-content>
+  <mat-card-actions>
+  </mat-card-actions>
+</mat-card>
